@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        
+        Background:'#555',
+        white:'#fff'
       },
       spacing:{
         '4':'4px',
