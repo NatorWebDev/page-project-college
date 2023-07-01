@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import Login from "./routes/Login";
+import { GoogleOAuthProvider } from "@react-oauth/google";
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
@@ -12,13 +13,15 @@ const router = createBrowserRouter([
     errorElement: <div>Error</div>,
   },
   {
-    path:'/login',
-    element: <Login />
-  }
+    path: "/login",
+    element: <Login />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <GoogleOAuthProvider>
+      <RouterProvider router={router} />
+    </GoogleOAuthProvider>
   </React.StrictMode>
 );

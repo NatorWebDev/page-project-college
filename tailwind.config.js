@@ -8,7 +8,8 @@ export default {
     extend: {
       colors: {
         Background:'#555',
-        white:'#fff'
+        white:'#fff',
+        primary:'#9944ee'
       },
       spacing:{
         '4':'4px',
