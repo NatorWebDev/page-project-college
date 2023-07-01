@@ -3,11 +3,16 @@
 @tailwind utilities;
 
 @layer components{
+  :root{
+    --PhoneInput-color--focus:none
+  }
   .input{
     background: #ddd;
     outline:none;
     padding: 8px;
   }
 
-
+  .PhoneInput :nth-child(2){
+    outline:none;
+  }
 }

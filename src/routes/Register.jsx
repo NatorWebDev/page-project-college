@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Form } from "react-router-dom";
 import { GoogleLogin } from "@react-oauth/google";
+import PhoneInput from "react-phone-number-input";
+import "react-phone-number-input/style.css";
 
 export default function Register() {
-
-  const [value, setValue] = useState('')
+  const [value, setValue] = useState("");
 
   return (
     <div className="w-full h-screen bg-Background absolute flex items-center justify-center login_bg">
@@ -14,7 +15,7 @@ export default function Register() {
         className="absolute w-full h-full z-10 blur-sm"
       />
 
-      <div className="w-384 h-512 bg-white flex flex-col items-center shadow-2xl rounded-lg p-12 pt-32 relative z-20 ">
+      <div className="w-384 h-512 bg-white flex flex-col items-center shadow-2xl rounded-lg p-4 pt-12 relative z-20 ">
         <h2 className="w-64 h-64 rounded-full relative flex items-center justify-center overflow-hidden">
           <img
             src="logo.png"
@@ -60,7 +61,13 @@ export default function Register() {
             className="input w-full h-32 rounded"
             placeholder="E-mail"
           />
-          <input type="tel" name="" id="" />
+          <PhoneInput
+            placeholder="Enter phone number"
+            value={value}
+            onChange={setValue}
+            className="input w-full h-32 rounded"
+            defaultCountry="VE"
+          />
           <input
             type="button"
             value="Sign Up"
