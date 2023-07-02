@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import Login from "./routes/Login";
 import Register from "./routes/Register";
+import Feed from './routes/Feed'
 import { GoogleOAuthProvider } from "@react-oauth/google";
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
@@ -10,7 +11,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <></>,
+    element: <Feed /> ,
     errorElement: <div>Error</div>,
   },
   {

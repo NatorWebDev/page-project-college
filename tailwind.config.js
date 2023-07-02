@@ -9,7 +9,8 @@ export default {
       colors: {
         Background:'#555',
         white:'#fff',
-        primary:'#9944ee'
+        primary:'#9944ee',
+        
       },
       spacing:{
         '4':'4px',
