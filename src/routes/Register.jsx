@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form } from "react-router-dom";
+import { Form, Link } from "react-router-dom";
 import { GoogleLogin } from "@react-oauth/google";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
@@ -9,6 +9,7 @@ export default function Register() {
 
   return (
     <div className="w-full h-screen bg-Background absolute flex items-center justify-center login_bg">
+      <div className="w-full z-[11] h-full select-none absolute"></div>
       <img
         src="login_bg.jpg"
         alt=""
@@ -77,6 +78,13 @@ export default function Register() {
             <GoogleLogin />
           </div>
         </Form>
+
+        <Link
+          to="/login"
+          className="absolute bottom-24 left-24 text-[.8rem] text-[#555] hover:text-primary transition-all duration-75 z-20"
+        >
+          Ya posee cuenta?, Iniciar Sesión
+        </Link>
       </div>
     </div>
   );

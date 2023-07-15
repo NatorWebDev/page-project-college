@@ -1,16 +1,18 @@
 import React from "react";
-import { Form } from "react-router-dom";
+import { Form,Link } from "react-router-dom";
 import { GoogleLogin } from "@react-oauth/google";
 import { BiSolidUser } from "react-icons/bi";
 import { AiOutlineLock } from "react-icons/ai";
 
+
 export default function Login() {
   return (
     <div className="w-full h-screen bg-Background absolute flex items-center justify-center login_bg">
+      <div className="w-full z-[11] h-full select-none absolute"></div>
       <img
         src="login_bg.jpg"
         alt=""
-        className="absolute w-full h-full z-10 blur-sm"
+        className="absolute w-full h-full z-10 blur-sm select-none"
       />
 
       <div className="w-384 h-512 bg-white flex flex-col items-center shadow-2xl rounded-lg p-12 pt-32 relative z-20 ">
@@ -52,6 +54,8 @@ export default function Login() {
             <GoogleLogin />
           </div>
         </Form>
+
+        <Link to='/register' className="absolute bottom-24 left-24 text-[.8rem] text-[#555] hover:text-primary transition-all duration-75">No posee cuenta?, Registrarse</Link>
       </div>
     </div>
   );
