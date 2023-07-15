@@ -24,17 +24,17 @@ export default function Register() {
             className="absolute h-96 w-96 object-cover"
           />
         </h2>
-        <h2 className="text-xl font-bold mt-12">Sign Up</h2>
+        <h2 className="text-xl font-bold mt-12">Registro</h2>
         <Form className="w-full flex flex-col p-24 justify-around flex-1 ">
           <div className="flex justify-between w-full h-32 w-full">
             <input
               type="text"
-              placeholder="First Name"
+              placeholder="Nombre"
               className="input h-32 w-128 rounded"
             />
             <input
               type="text"
-              placeholder="Last Name"
+              placeholder="Apellido"
               className="input h-32 w-128 rounded"
             />
           </div>
@@ -44,7 +44,7 @@ export default function Register() {
             name="awa"
             id=""
             className="input w-full h-32 rounded"
-            placeholder="UserName"
+            placeholder="Nombre de Usuario o Apodo"
           />
 
           <input
@@ -52,17 +52,17 @@ export default function Register() {
             name="awa"
             id=""
             className="input w-full h-32 rounded"
-            placeholder="Password"
+            placeholder="Contraseña"
           />
           <input
             type="text"
             name="awa"
             id=""
             className="input w-full h-32 rounded"
-            placeholder="E-mail"
+            placeholder="Correo Electrónico"
           />
           <PhoneInput
-            placeholder="Enter phone number"
+            placeholder="Ingrese su Número"
             value={value}
             onChange={setValue}
             className="input w-full h-32 rounded"
@@ -70,7 +70,7 @@ export default function Register() {
           />
           <input
             type="button"
-            value="Sign Up"
+            value="Registrarse"
             className="w-192 h-48 rounded bg-primary self-center text-white font-bold cursor-pointer transition-all duration-100 hover:bg-[#7744cc]"
           />
           <div className="w-192 h-64 self-center">

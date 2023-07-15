@@ -4,28 +4,28 @@ import { AiOutlineFileAdd } from "react-icons/ai";
 export default function Create() {
   return (
     <Form className="w-full flex-1 flex px-64 py-16 flex-col items-center">
-      <h2 className="text-2xl">Create an Event</h2>
+      <h2 className="text-2xl">Crear un Evento</h2>
       <input
         type="text"
         className="input rounded-xl mt-8"
-        placeholder="Title"
+        placeholder="Título"
       />
       <div className="w-full flex flex-1">
         <div className="mt-16 flex-1 flex flex-col items-center">
           <div className="flex flex-col w-256 ">
-            <label htmlFor="">Location</label>
+            <label htmlFor="">Ubicación</label>
             <input type="text" className="input rounded-xl" placeholder="" />
           </div>
           <div className="flex flex-col w-256">
-            <label htmlFor="">Description</label>
+            <label htmlFor="">Descripción</label>
             <textarea className="input rounded-xl" placeholder="" />
           </div>
           <div className="flex flex-col w-256">
-            <label htmlFor="">Date</label>
+            <label htmlFor="">Fecha</label>
             <input type="text" className="input rounded-xl" placeholder="" />
           </div>
           <div className="flex flex-col w-256">
-            <label htmlFor="">Hour</label>
+            <label htmlFor="">Hora</label>
             <input type="text" className="input rounded-xl" placeholder="" />
           </div>
         </div>
@@ -48,16 +48,16 @@ export default function Create() {
           />
 
           <div className="flex flex-col w-256">
-            <label htmlFor="">Phone</label>
+            <label htmlFor="">Teléfono</label>
             <input type="text" className="input rounded-xl" placeholder="" />
           </div>
           <div className="flex flex-col w-256">
-            <label htmlFor="">Entrance Cost</label>
+            <label htmlFor="">Costo de Entrada</label>
             <input type="text" className="input rounded-xl" placeholder="" />
           </div>
         <div className="flex w-256 mt-16 justify-around items-center ">
-            <Link to='/' className="">Back</Link>
-            <input type="button" value="Create" className="py-8 px-16 cursor-pointer rounded-xl bg-primary text-white transition-all duration-100 hover:bg-[#8833dd] shadow-lg" />
+            <Link to='/' className="">Volver</Link>
+            <input type="button" value="Crear" className="py-8 px-16 cursor-pointer rounded-xl bg-primary text-white transition-all duration-100 hover:bg-[#8833dd] shadow-lg" />
         </div>
         </div>
       </div>

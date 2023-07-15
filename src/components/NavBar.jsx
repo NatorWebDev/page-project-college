@@ -10,10 +10,10 @@ export default function NavBar() {
       </Link>
       <ul className="flex flex-[2]  mx-24">
         <li className="ml-16 hover:text-primary transition-all duration-100 text-lg flex-[1]">
-          <Link to="/categories">Categories</Link>
+          <Link to="/categories">Categorias</Link>
         </li>
         <li className="ml-16 hover:text-primary transition-all duration-100 text-lg flex-[1]">
-          <Link to="/Explore">Explore</Link>
+          <Link to="/Explore">Explorar</Link>
         </li>
         <li className="flex items-center flex-[5]">
           <input type="text" placeholder="Search" className="shadow outline-none rounded-2xl p-4 px-8 w-full bg-[#eee]" />
