@@ -25,10 +25,6 @@ export default function Navigator() {
       link: "/create",
     },
     {
-      name: "Feed",
-      link: "/",
-    },
-    {
       name: "Editar Perfil",
       link: "/profileedit",
     },

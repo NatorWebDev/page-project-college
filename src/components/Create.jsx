@@ -37,7 +37,7 @@ export default function Create() {
           >
             <AiOutlineFileAdd size={32} className="opacity-50 mb-8" />
             <div className="text-center text-xs opacity-50">
-              Suelta tus archivos aqui o seleccione un archivo
+              Añade una foto al evento
             </div>
           </label>
           <input
