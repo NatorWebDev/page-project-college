@@ -3,9 +3,11 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import Login from "./routes/Login";
 import Register from "./routes/Register";
-import Feed from "./routes/Feed";
+import Main from "./routes/Main";
 import Create from "./components/Create";
 import Navigator from "./components/Navigator";
+import ProfileCustom from "./routes/ProfileCustom";
+import NotFound from "./routes/NotFound";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
@@ -15,16 +17,21 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <>
-        <Feed />
+        <Main />
         <Navigator />
       </>
     ),
-    errorElement: <div>Error</div>,
+    errorElement: <NotFound />,
     children: [
       {
         path: "create",
         element: <Create />,
       },
+      {
+        path: "profileedit",
+        element: <ProfileCustom />,
+      },
+
     ],
   },
   {

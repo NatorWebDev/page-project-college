@@ -9,11 +9,11 @@ export default function Register() {
 
   return (
     <div className="w-full h-screen bg-Background absolute flex items-center justify-center login_bg">
-      <div className="w-full z-[11] h-full select-none absolute"></div>
+      <div className="w-full z-[11] h-full select-none absolute bg-primary opacity-10"></div>
       <img
         src="login_bg.jpg"
         alt=""
-        className="absolute w-full h-full z-10 blur-sm"
+        className="absolute w-full h-full z-10 blur-sm object-cover"
       />
 
       <div className="w-384 h-512 bg-white flex flex-col items-center shadow-2xl rounded-lg p-4 pt-12 relative z-20 ">

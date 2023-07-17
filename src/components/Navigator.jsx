@@ -28,6 +28,10 @@ export default function Navigator() {
       name: "Feed",
       link: "/",
     },
+    {
+      name: "Editar Perfil",
+      link: "/profileedit",
+    },
   ];
 
   const activeStyles =
