@@ -8,6 +8,7 @@ import Create from "./components/Create";
 import Navigator from "./components/Navigator";
 import ProfileCustom from "./routes/ProfileCustom";
 import NotFound from "./routes/NotFound";
+import Welcome from "./routes/Welcome"
 import { GoogleOAuthProvider } from "@react-oauth/google";
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
@@ -48,6 +49,15 @@ const router = createBrowserRouter([
     element: (
       <>
         <Register />
+        <Navigator />
+      </>
+    ),
+  },
+  {
+    path: "/welcome",
+    element: (
+      <>
+        <Welcome />
         <Navigator />
       </>
     ),

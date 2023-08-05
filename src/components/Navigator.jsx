@@ -31,13 +31,13 @@ export default function Navigator() {
   ];
 
   const activeStyles =
-    "absolute w-128 flex flex-col gap-[16px] toLeft transition-all duration-300";
+    "absolute w-128 flex flex-col gap-[16px] toRight transition-all duration-300";
   const notActiveStyles =
     "absolute w-128 flex flex-col gap-[16px] reduce transition-all duration-300";
 
   return (
     <div
-      className=" w-64 h-64 rounded-full absolute bg-white right-12 centerY z-40 flex items-center justify-center cursor-pointer purpleShadow hover:bg-primary group/circle transition-all duration-100"
+      className=" w-64 h-64 rounded-full absolute bg-white left-12 centerY z-40 flex items-center justify-center cursor-pointer purpleShadow hover:bg-primary group/circle transition-all duration-100"
       onClick={() => {
         isActive ? setisActive(false) : setisActive(true);
       }}
